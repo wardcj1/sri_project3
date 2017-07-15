@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+// import './InvSpectrum.css';
+
 
 class InvSpectrum extends Component {
 	
@@ -12,7 +14,7 @@ class InvSpectrum extends Component {
 
 	submitQuestionaire () {
 		console.log("Submit Button Clicked");
-		this.props.history.push('/');
+		this.props.history.push('/MyPortfolio/MyPortfolio');
 	}
 
 	render() {

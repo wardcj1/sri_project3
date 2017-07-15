@@ -4,8 +4,17 @@ body {
   font-family: sans-serif;
 }
 
+.logo {
+	background-image: url("./assets/images/sri_logo.png");
+    background-color: red;
+}
+
 .activeNav {
   background-color: red !important;
   color: white !important;
   font-weight: 800;    
+}
+
+.container {
+	width: 100%;
 }

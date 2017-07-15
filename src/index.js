@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
-import Home from './Home';
-import InvSpectrum from './InvSpectrum';
+import Home from './Home/Home';
+import InvSpectrum from './InvSpectrum/InvSpectrum';
+import MyPortfolio from './MyPortfolio/MyPortfolio';
+import Suitability from './Suitability/Suitability';
+
+
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -31,13 +35,15 @@ ReactDOM.render(
           <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav">
               <li><NavLink exact activeClassName="activeNav" to="/">Home</NavLink></li>
-              <li><NavLink activeClassName="activeNav" to="/invSpectrum">Start</NavLink></li>
+              <li><NavLink activeClassName="activeNav" to="/InvSpectrum/InvSpectrum">Start</NavLink></li>
             </ul>
           </div>
         </div>
       </nav>
       <Route exact path="/" component={Home}/>
       <Route path="/InvSpectrum" component={InvSpectrum} history={history}/>
+      <Route path="/MyPortfolio" component={MyPortfolio} history={history}/>
+      <Route path="/Suitability" component={Suitability} history={history}/>
     </div>
   </Router>, 
  document.getElementById('root')
