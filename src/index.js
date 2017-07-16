@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
+import logo from './assets/images/sri_logo.png';
 import Home from './Home/Home';
 import InvSpectrum from './InvSpectrum/InvSpectrum';
 import MyPortfolio from './MyPortfolio/MyPortfolio';
@@ -16,18 +17,6 @@ import {
 import createBrowserHistory from 'history/createBrowserHistory'
 const history = createBrowserHistory()
 
-// import * as firebase from 'firebase';
-// var config = {
-//     apiKey: "AIzaSyC5NVKGsm6lXtN-KoLPPzhz2jlxFRiz8Hc",
-//     authDomain: "smartroboinvestments.firebaseapp.com",
-//     databaseURL: "https://smartroboinvestments.firebaseio.com",
-//     // projectId: "smartroboinvestments",
-//     storageBucket: "smartroboinvestments.appspot.com",
-//     // messagingSenderId: "78343951803"
-// };
-// firebase.initializeApp(config);
-
-
 ReactDOM.render(
   <Router>
     <div className="container">
@@ -40,7 +29,10 @@ ReactDOM.render(
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <NavLink activeClassName="activeNav" to="/">Smart Robo Investments</NavLink>
+            <NavLink activeClassName="activeNav" to="/">
+              <img src={logo} className="App-logo" alt="Smart Robo Investments" height="50px" />
+            </NavLink>
+
           </div>
           <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav">
